@@ -1,0 +1,106 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Raleway", sans-serif;}
+
+.seat {
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 10px;
+  background: #f1f1f1;
+}
+
+.taken {
+  background: #df0000;
+  color: #fff;
+}
+
+.selected {
+  background: #87ff96;
+}
+
+
+#layout {
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+#legend {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 50px auto;
+}
+
+#legend .txt {
+  display: flex;
+  align-items: center;
+}
+
+
+#save {
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 0;
+  color: #fff;
+  background: #00479f;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px;
+}
+
+#seatMap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background-color: #5cb85c;
+  color: white;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
